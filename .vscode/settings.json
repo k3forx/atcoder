@@ -2,6 +2,8 @@
   "files.associations": {
     "*.tmpl": "html",
     "*.go.tmpl": "html",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "iostream": "cpp",
+    "string": "cpp"
   }
 }
