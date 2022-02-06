@@ -4,6 +4,9 @@
 
 ```c++
 vector<vector<int>> matrix(RR, vector<int>(CC));
+
+// sort
+sort(seq.begin(), seq.end())
 ```
 
 ## Sort
