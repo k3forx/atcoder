@@ -1,5 +1,11 @@
 # atcoder
 
+## C++
+
+```c++
+vector<vector<int>> matrix(RR, vector<int>(CC));
+```
+
 ## Sort
 
 - https://pkg.go.dev/sort
