@@ -4,6 +4,7 @@
     "*.go.tmpl": "html",
     "ostream": "cpp",
     "iostream": "cpp",
-    "string": "cpp"
+    "string": "cpp",
+    "vector": "cpp"
   }
 }
