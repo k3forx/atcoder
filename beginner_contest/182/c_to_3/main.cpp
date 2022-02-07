@@ -3,6 +3,9 @@ using namespace std;
 
 int main()
 {
-	int X;
-	cin >> X;
+	int N;
+	cin >> N;
+
+	int digits = to_string(N).size();
+	cout << digits << endl;
 }
