@@ -3,21 +3,13 @@ using namespace std;
 
 int main()
 {
-	int N, K, X, Y;
-	cin >> N >> K >> X >> Y;
+	int N;
+	cin >> N;
 
-	int cost = 0;
+	int sum = 0;
 	for (int i = 1; i <= N; i++)
 	{
-		if (i <= K)
-		{
-			cost = cost + X;
-		}
-		else
-		{
-			cost = cost + Y;
-		}
+		sum = sum + i;
 	}
-
-	cout << cost << endl;
+	cout << sum << endl;
 }
