@@ -7,6 +7,9 @@ vector<vector<int>> matrix(RR, vector<int>(CC));
 
 // sort
 sort(seq.begin(), seq.end())
+
+// max integer
+long long res = 1LL << 60;
 ```
 
 ## Sort

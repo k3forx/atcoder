@@ -13,4 +13,18 @@ int main()
 	}
 
 	cout << "-----" << endl;
+
+	long long res = 1LL << 60;
+	for (int bit = 0; bit < (1 << N); bit++)
+	{
+		for (int i = 0; i < N; i++)
+		{
+			if (bit & 1 << i)
+			{
+				cout << "bit: " << bit << ", i: " << i << endl;
+			}
+		}
+	}
+
+	cout << res << endl;
 }
