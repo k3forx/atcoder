@@ -10,5 +10,15 @@ int main()
 	for (int i = 0; i < N; i++)
 	{
 		cin >> ss.at(i);
+		// cout << ss.at(i) << endl;
 	}
+
+	// cout << "-----" << endl;
+
+	sort(ss.begin(), ss.end());
+	for (int i = 0; i < N; i++)
+	{
+		cout << ss.at(i);
+	}
+	cout << endl;
 }
