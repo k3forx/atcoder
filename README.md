@@ -14,6 +14,9 @@ long long res = 1LL << 60;
 //文字列抽出
 string str = "";
 str.substr(開始位置, 取り出す長さ);
+
+// int to string
+to_string()
 ```
 
 ## Sort
