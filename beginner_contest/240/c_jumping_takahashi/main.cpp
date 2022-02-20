@@ -3,50 +3,34 @@ using namespace std;
 
 int main()
 {
-	int N, X;
-	cin >> N >> X;
+	int n, x;
+	cin >> n >> x;
 
-	vector<vector<int> > ab(N, vector<int>(2));
-	for (int i = 0; i < N; i++)
+	vector<int> a(n), b(n);
+	for (int i = 0; i < n; i++)
 	{
-		cin >> ab.at(i).at(0) >> ab.at(i).at(1);
+		cin >> a[i] >> b[i];
 	}
 
-	bool canJump = false;
-	for (int bit = 0; bit < (1 << N); bit++)
-	{
-		int dist = 0;
-		for (int i = 0; i < N; i++)
-		{
-			if (bit & (1 << i))
-			{
-				dist = dist + ab.at(i).at(0);
-				// cout << "bit: " << bit << ", i: " << i << endl;
-			}
-			else
-			{
-				dist = dist + ab.at(i).at(1);
-			}
+	vector<vector<int> > dp(n + 1, vector<int>(x + 1, false));
 
-			if (dist > X)
+	dp[0][0] = true;
+	for (int i = 0; i < n; ++i)
+	{
+		for (int j = 0; j <= x; ++j)
+		{
+			if (dp[i][j])
 			{
-				break;
+				if (j + a[i] <= x)
+				{
+					dp[i + 1][j + a[i]] = true;
+				}
+				if (j + b[i] <= x)
+				{
+					dp[i + 1][j + b[i]] = true;
+				}
 			}
 		}
-		// cout << "dist: " << dist << endl;
-		if (dist == X)
-		{
-			canJump = true;
-			break;
-		}
 	}
-
-	if (canJump)
-	{
-		cout << "Yes" << endl;
-	}
-	else
-	{
-		cout << "No" << endl;
-	}
+	cout << (dp[n][x] ? "Yes" : "No") << '\n';
 }
