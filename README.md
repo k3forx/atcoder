@@ -5,6 +5,7 @@
 ### AtCoder Beginner Contest (ABC)
 
 - 239 (2022/02/19)
+
   - [x] A: Horizon
   - [x] B: Integer Division
   - [x] C: Knight Fork
@@ -13,6 +14,9 @@
   - [ ] F: Construct Highway
   - [ ] G: Builder Takahashi
   - [ ] Ex: Dice Product 2
+
+- 240 (2022/02/20)
+  - [x] A:
 
 ## C++
 
