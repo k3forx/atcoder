@@ -18,6 +18,11 @@
 - 240 (2022/02/20)
   - [x] A:
 
+### AtCoder Educational DP Contest
+
+- [x] A: Frog 1
+- [ ] B: Frog 2
+
 ## C++
 
 ```c++
